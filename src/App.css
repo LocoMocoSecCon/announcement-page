@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+:root {
+  /* --background-color: #2196f3; */
+  --water-color: #2196f3;
+  --alt-bkg-color: #badbef;
+  --swe-color-primary: #fff;
+  --swe-color-light: #222;
+  --hotel-dist: 6rem;
+}
+
+body .sessionize-loader {
+  display: none;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  background-image: url('sunset.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-origin: content-box;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: table;
+}
+
+.gradient-overlay {
+  background-color: transparent;
+  opacity: 0.3;
+  background-image: linear-gradient(135deg, #191919 25%, transparent 25%), linear-gradient(225deg, #191919 25%, transparent 25%), linear-gradient(45deg, #191919 25%, transparent 25%), linear-gradient(315deg, #191919 25%, #e5e5f7 25%);
+  background-position: 4px 0, 4px 0, 0 0, 0 0;
+  background-size: 4px 4px;
+  background-repeat: repeat;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.content {
+  padding-top: calc(var(--navbar-height));
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 30px;
+  position: relative;
+  z-index: 2;
+  overflow: auto !important;
+}
+
+.page {
+  position: absolute;
+  z-index: 2;
+}
+
+.sub-page {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.page-layout {
+  width: 100%;
+}
+
+.sub-page-title {
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: Oswald, "Montserrat", "Roboto", sans-serif;
+  width: 100%;
+  text-align: center;
+  text-shadow: 2px 2px 8px #fff;
+}
+
+.transparent-block {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.transparent-block-container {
+  margin-bottom: 20px;
+}
+
+.transparent-block-title {
+  font-size: 1.2em;
+  font-weight: bolder;
+  color: #000;
+}
+
+.transparent-block-sub-title {
+  font-size: 1em;
+  font-weight: bold;
+  color: #ea7560;
+}
+
+@media (min-width: 200px) {
+  .container {
+    max-width: 360px;
+  }
+  .sizzle-icon {
+    display: none;
+  }
+  .nav-menu {
+    min-width: 100vw;
+  }
+  .venue-hotel-info-right {
+    padding: 0px 20px 0px 3em;
+  }
+  .sub-page-title {
+    font-size: 1.5em;
+  }
+  .block-one-text {
+    flex-direction: column;
+  }
+  .block-availability {
+    display: block;
+  }
+  .sub-button {
+    flex-direction: column;
+  }
+  .secondary-nav {
+    margin-top: calc(var(--navbar-height) - 0px);
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+  .sizzle-icon {
+    display: block;
+  }
+  .sub-page-title {
+    font-size: 2em;
+  }
+  .secondary-nav {
+    margin-top: calc(var(--navbar-height) - 4px);
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  .nav-menu {
+    min-width: 768px;
+  }
+  .venue-hotel-info-right {
+    padding: 0px 50px 0px 4em;
+  }
+  .sub-page-title {
+    font-size: 3em;
+  }
+  .block-one-text {
+    flex-direction: row;
+  }
+  .block-availability {
+    display: inline;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+  .sub-button {
+    flex-direction: row;
+  }
+}
